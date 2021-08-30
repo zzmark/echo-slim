@@ -1,0 +1,22 @@
+{
+  // 保存时 自动格式化
+  "editor.formatOnSave": false,
+  // 保存时 自动执行 eslint 修复格式
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.trace.server": "verbose",
+  "eslint.validate":[
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown"
+  ],
+  "emmet.includeLanguages": {
+    "javascriptreact": "html",
+    "typescriptreact": "html"
+  },
+}

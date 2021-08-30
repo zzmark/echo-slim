@@ -10,4 +10,6 @@ RUN npm install --production
 
 COPY . .
 
+EXPOSE 43434
+
 CMD [ "npm", "run", "serve" ]

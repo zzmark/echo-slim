@@ -1,0 +1,14 @@
+public/* linguist-vendored
+
+*.lock            text -diff
+package.json      text eol=lf
+package-lock.json text -diff
+pnpm-lock.yaml    text eol=lf -diff
+yarn.lock         text -diff
+
+# shell
+*.bash            text eol=lf
+*.bat             text eol=crlf
+*.cmd             text eol=crlf
+*.ps1             text eol=crlf
+*.sh              text eol=lf
