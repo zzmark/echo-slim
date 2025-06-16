@@ -3,7 +3,7 @@
   "editor.formatOnSave": false,
   // 保存时 自动执行 eslint 修复格式
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "eslint.trace.server": "verbose",
   "eslint.validate":[

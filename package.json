@@ -7,19 +7,21 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "serve": "node --http-parser=legacy --insecure-http-parser src/index.js"
+    "start": "node --http-parser=legacy --insecure-http-parser src/index.js"
   },
-  "author": "",
+  "author": {
+    "name": "Mark Zhou",
+    "email": "zz.mark06@gmail.com"
+  },
   "license": "WTFPL",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "http-parser-js": "^0.5.2"
   },
-  "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/eslint-parser": "^7.15.0",
-    "eslint": "^7.32.0",
-    "eslint-config-alloy": "^4.2.0"
+  "packageManager": "pnpm@9.15.9+sha512.68046141893c66fad01c079231128e9afb89ef87e2691d69e4d40eee228988295fd4682181bae55b58418c3a253bde65a505ec7c5f9403ece5cc3cd37dcf2531",
+  "engines": {
+    "node": ">=20.10.0",
+    "pnpm": ">=9.12.0"
   }
 }

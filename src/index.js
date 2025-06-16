@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+const fs = require('fs')
 
 app.use(bodyParser())
 
@@ -36,7 +37,9 @@ app.post('/echo', (req, res) => {
   res.send(a)
 })
 
-app.get('/*', (req, res) => {
+const static = express.static('./root');
+
+app.get('/*', (req, res, next) => {
   console.log('============ start ===========')
   console.log('Time: ', new Date())
   console.log('Method: ', req.method)
@@ -46,8 +49,8 @@ app.get('/*', (req, res) => {
   console.log('Query: ', req.query)
   console.log('Body: ', req.body)
   console.log('============= end ===========')
-  res.send('Hello World')
-})
+  static(req, res, next);
+});
 app.post('/*', (req, res) => {
   console.log('============ start ===========')
   console.log('Time: ', new Date())
@@ -58,8 +61,8 @@ app.post('/*', (req, res) => {
   console.log('Query: ', req.query)
   console.log('Body: ', req.body)
   console.log('============= end ===========')
-  res.send('Hello World')
-})
+  res.send('{}')
+});
 
 const port = 43434
 console.log('start on ', port)
